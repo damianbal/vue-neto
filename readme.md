@@ -11,7 +11,7 @@ Make async http requests inside Vue components, you can use await as well :)
 
 ```js
 methods: {
-    async loadArticles: () => {
+    async loadArticles () {
         this.articles = await this.$neto.getObject('api/articles')
         console.log(this.articles) // articles fetched 
     }
